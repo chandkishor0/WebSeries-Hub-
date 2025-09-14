@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSeries Hub Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">WebSeries<span>Hub</span> Admin</div>
+    <button id="logoutBtn" style="margin-left:auto;">Logout</button>
+  </header>
+
+  <main style="padding:20px;">
+    <h2>Add / Edit Video</h2>
+    <form id="videoForm">
+      <input type="hidden" id="docId">
+      <input type="text" id="videoTitle" placeholder="Title" required>
+      <input type="text" id="videoPoster" placeholder="Poster URL" required>
+      <input type="text" id="videoLink" placeholder="Video URL" required>
+      <select id="videoCategory">
+        <option value="movies">Movies</option>
+        <option value="webseries">Web Series</option>
+      </select>
+      <label>
+        <input type="checkbox" id="videoTrending"> Trending 🔥
+      </label>
+      <button type="submit">Save Video</button>
+    </form>
+
+    <h2>All Videos</h2>
+    <div id="videosList"></div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
