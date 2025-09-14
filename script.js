@@ -3,7 +3,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyDzqf9LnP7opk30hyv42MuxcsII0AsRQ2I",
   authDomain: "webseries-hub-94dbb.firebaseapp.com",
   projectId: "webseries-hub-94dbb",
-  storageBucket: "webseries-hub-94dbb.firebasestorage.app",
+  storageBucket: "webseries-hub-94dbb.appspot.com",
   messagingSenderId: "416872939626",
   appId: "1:416872939626:web:af484c2c3a6e00af774a13"
 };
